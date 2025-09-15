@@ -14,9 +14,7 @@ export class QuestionDialogComponent {
   public noButtonText: string;
   public yesButtonText: string;
 
-  constructor(private dialogRef: MatDialogRef<QuestionDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) private data: any
-  ) {
+  constructor(@Inject(MAT_DIALOG_DATA) private data: any) {
     this.title = data.title;
     this.message = data.message;
     this.noButtonText = data.noButtonText;

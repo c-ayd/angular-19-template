@@ -13,9 +13,7 @@ export class InfoDialogComponent {
   public message: string;
   public buttonText: string;
 
-  constructor(private dialogRef: MatDialogRef<InfoDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) private data: any
-  ) {
+  constructor(@Inject(MAT_DIALOG_DATA) private data: any) {
     this.title = data.title;
     this.message = data.message;
     this.buttonText = data.buttonText;
