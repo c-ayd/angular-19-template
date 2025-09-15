@@ -11,17 +11,17 @@
       <trans-unit id="1834844445344817694" datatype="html">
         <source>Unauthorized</source>
       </trans-unit>
-      <trans-unit id="2161528641772974097" datatype="html">
-        <source> Password is required. </source>
+      <trans-unit id="3577237269587081090" datatype="html">
+        <source>Password is required.</source>
       </trans-unit>
-      <trans-unit id="248663756472436313" datatype="html">
-        <source> Email is invalid. </source>
+      <trans-unit id="742773351761761493" datatype="html">
+        <source>Email is invalid.</source>
       </trans-unit>
-      <trans-unit id="2542719271567659201" datatype="html">
-        <source> Password must contain at least one letter and one number. </source>
+      <trans-unit id="7773167304555433864" datatype="html">
+        <source>Password must contain at least one letter and one number.</source>
       </trans-unit>
-      <trans-unit id="2796760620406713589" datatype="html">
-        <source> Email is required. </source>
+      <trans-unit id="8602814243662345124" datatype="html">
+        <source>Email is required.</source>
       </trans-unit>
       <trans-unit id="4166166242155319722" datatype="html">
         <source> Log In </source>
@@ -29,8 +29,8 @@
       <trans-unit id="4530382279851900680" datatype="html">
         <source>You do not have the permission to access this resource.</source>
       </trans-unit>
-      <trans-unit id="7551730457094500434" datatype="html">
-        <source> Password must be at least 10 characters. </source>
+      <trans-unit id="3066706929920726177" datatype="html">
+        <source>Password must be at least 10 characters.</source>
       </trans-unit>
       <trans-unit id="9050981677989412526" datatype="html">
         <source>You need to log in to access the resource.</source>

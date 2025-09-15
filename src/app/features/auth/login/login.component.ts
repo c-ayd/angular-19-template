@@ -58,7 +58,20 @@ export class LoginComponent implements OnInit {
     return this.loginForm.get('email');
   }
 
+  getEmailErrorMessage(): string {
+    if (this.email?.hasError('required')) return $localize`Email is required.`;
+    if (this.email?.hasError('email')) return $localize`Email is invalid.`;
+    return '';
+  }
+
   get password() {
     return this.loginForm.get('password');
+  }
+
+  getPasswordErrorMessage(): string {
+    if (this.password?.hasError('required')) return $localize`Password is required.`;
+    if ((this.password?.value?.length ?? 0) < 10) return $localize`Password must be at least 10 characters.`;
+    if (this.password?.hasError('pattern')) return $localize`Password must contain at least one letter and one number.`;
+    return '';
   }
 }

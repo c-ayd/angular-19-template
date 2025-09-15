@@ -17,29 +17,29 @@
         <source>You do not have the permission to access this resource.</source>
         <target state="new">Sie haben keine Berechtigung, auf diese Ressource zuzugreifen.</target>
       </trans-unit>
-      <trans-unit id="2796760620406713589" datatype="html">
-        <source> Email is required. </source>
-        <target state="new"> Email ist erforderlich. </target>
+      <trans-unit id="8602814243662345124" datatype="html">
+        <source>Email is required.</source>
+        <target state="new">Email ist erforderlich.</target>
       </trans-unit>
-      <trans-unit id="248663756472436313" datatype="html">
-        <source> Email is invalid. </source>
-        <target state="new"> Email ist ungültig. </target>
+      <trans-unit id="742773351761761493" datatype="html">
+        <source>Email is invalid.</source>
+        <target state="new">Email ist ungültig.</target>
       </trans-unit>
       <trans-unit id="1431416938026210429" datatype="html">
         <source>Password</source>
         <target state="new">Passwort</target>
       </trans-unit>
-      <trans-unit id="2161528641772974097" datatype="html">
-        <source> Password is required. </source>
-        <target state="new"> Passwort ist erforderlich. </target>
+      <trans-unit id="3577237269587081090" datatype="html">
+        <source>Password is required.</source>
+        <target state="new">Passwort ist erforderlich.</target>
       </trans-unit>
-      <trans-unit id="7551730457094500434" datatype="html">
-        <source> Password must be at least 10 characters. </source>
-        <target state="new"> Passwort muss mindestens 10 Zeichen lang sein. </target>
+      <trans-unit id="3066706929920726177" datatype="html">
+        <source>Password must be at least 10 characters.</source>
+        <target state="new">Passwort muss mindestens 10 Zeichen lang sein.</target>
       </trans-unit>
-      <trans-unit id="2542719271567659201" datatype="html">
-        <source> Password must contain at least one letter and one number. </source>
-        <target state="new"> Passwort muss mindestens einen Buchstaben und eine Zahl enthalten. </target>
+      <trans-unit id="7773167304555433864" datatype="html">
+        <source>Password must contain at least one letter and one number.</source>
+        <target state="new">Passwort muss mindestens einen Buchstaben und eine Zahl enthalten.</target>
       </trans-unit>
       <trans-unit id="4166166242155319722" datatype="html">
         <source> Log In </source>
