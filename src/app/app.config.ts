@@ -3,13 +3,16 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { environment } from './environments/environment';
 import { API_URL } from './core/injection-tokens/api-tokens';
-import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
+import { refreshTokenInterceptor } from './core/interceptors/refresh-token.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
-    provideHttpClient(),
+    provideHttpClient(
+      withInterceptors([refreshTokenInterceptor])
+    ),
     { provide: API_URL, useValue: environment.apiUrl }
   ]
 };
