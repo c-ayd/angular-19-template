@@ -9,6 +9,8 @@ import { API_URL } from '../injection-tokens/api-tokens';
   providedIn: 'root'
 })
 export class AuthService {
+  private readonly TokenHeaderKey = 'Authorization';
+  private readonly TokenType = 'Bearer';
   private readonly TokenStorageKey = 'jwt-bearer';
 
   private _isAuthenticated = signal(false);
@@ -49,7 +51,7 @@ export class AuthService {
       withCredentials: true
     }).pipe(
       map(response => {
-        if (response && response.data && response.data.accessToken) {
+        if (response?.data?.accessToken) {
           this.setJwtBearerToken(response.data.accessToken, response.metadata?.['roles']);
         }
         else {
@@ -64,5 +66,17 @@ export class AuthService {
         return throwError(() => error);
       })
     );
+  }
+
+  getTokenHeaderKey(): string {
+    return this.TokenHeaderKey;
+  }
+
+  getTokenHeaderValue(): string {
+    return `${this.TokenType} ${this.getJwtBearerToken()}`;
+  }
+
+  getTokenType(): string {
+    return this.TokenType;
   }
 }

@@ -26,7 +26,8 @@ describe('ApiService', () => {
           provide: AuthService,
           useValue: {
             isAuthenticated: () => true,
-            getJwtBearerToken: () => 'test'
+            getTokenHeaderKey: () => 'Authorization',
+            getTokenHeaderValue: () => 'Bearer test'
           }
         }
       ]

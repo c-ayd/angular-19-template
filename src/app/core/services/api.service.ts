@@ -11,8 +11,6 @@ import { ApiRequestParams } from '../models/api-request-params.model';
   providedIn: 'root'
 })
 export class ApiService {
-  private readonly AuthorizationHeaderKey = 'Authorization';
-  private readonly TokenType = 'Bearer ';
 
   constructor(private httpService: HttpService,
     private authService: AuthService,
@@ -58,8 +56,8 @@ export class ApiService {
       if (request.headers == undefined) {
         request.headers = {};
       }
-
-      request.headers[this.AuthorizationHeaderKey] = this.TokenType + this.authService.getJwtBearerToken();
+      
+      request.headers[this.authService.getTokenHeaderKey()] = this.authService.getTokenHeaderValue();
     }
 
     return request;
