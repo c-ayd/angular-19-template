@@ -35,6 +35,12 @@
       <trans-unit id="9050981677989412526" datatype="html">
         <source>You need to log in to access the resource.</source>
       </trans-unit>
+      <trans-unit id="2454050363478003966" datatype="html">
+        <source>Login</source>
+      </trans-unit>
+      <trans-unit id="2821179408673282599" datatype="html">
+        <source>Home</source>
+      </trans-unit>
     </body>
   </file>
 </xliff>
