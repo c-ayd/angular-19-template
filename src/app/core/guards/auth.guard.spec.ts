@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AuthService } from '../services/auth.service';
 import { authGuard } from './auth.guard';
+import { NotificationService } from '../services/notification.service';
 
 describe('authGuard', () => {
   let authServiceSpy: jasmine.SpyObj<AuthService>;
@@ -10,7 +11,13 @@ describe('authGuard', () => {
 
     TestBed.configureTestingModule({
       providers: [
-        { provide: AuthService, useValue: authServiceSpy }
+        { provide: AuthService, useValue: authServiceSpy },
+        {
+          provide: NotificationService,
+          useValue: {
+            showNotification: () => {}
+          }
+        }
       ]
     });
   });
