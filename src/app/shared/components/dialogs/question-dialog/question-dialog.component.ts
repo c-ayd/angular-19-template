@@ -9,10 +9,10 @@ import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/materia
   styleUrl: './question-dialog.component.scss'
 })
 export class QuestionDialogComponent {
-  public title: string = '';
-  public message: string = '';
-  public noButtonText: string = '';
-  public yesButtonText: string = '';
+  public title: string;
+  public message: string;
+  public noButtonText: string;
+  public yesButtonText: string;
 
   constructor(private dialogRef: MatDialogRef<QuestionDialogComponent>,
     @Inject(MAT_DIALOG_DATA) private data: any

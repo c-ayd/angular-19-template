@@ -9,9 +9,9 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrl: './info-dialog.component.scss'
 })
 export class InfoDialogComponent {
-  public title: string = '';
-  public message: string = '';
-  public buttonText: string = '';
+  public title: string;
+  public message: string;
+  public buttonText: string;
 
   constructor(private dialogRef: MatDialogRef<InfoDialogComponent>,
     @Inject(MAT_DIALOG_DATA) private data: any
